@@ -1,3 +1,7 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
 body{
     background-color: black;
 }
@@ -15,7 +19,7 @@ header{
     background-repeat: no-repeat;
     
     
-    min-height: 400px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,6 +66,7 @@ main h2, h3, p{
     color: aliceblue;
 }
 
+
 .Lock img{
     width: 20rem;  
 }
@@ -70,4 +75,119 @@ main h2, h3, p{
 }
 .Clock img{
     width: 20rem;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 3rem;
+}
+
+.icon-list img{
+    width: 4rem;
+}
+
+.icon-list a{
+    /* display: block; */
+    text-align: center;
+    width: 100%;
+    padding: 15px;
+    color: aliceblue;
+    border-radius: 7.5px;
+    font-size: 1.2rem;
+    background-color: orange;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+
+
+/* Contenedor en grid para tener tarjetas lado a lado */
+.house-list {
+    margin-top: 7rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+/* Tarjeta vertical: imagen arriba, contenido abajo */
+.house-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #3e3e3e;
+}
+
+/* Imagen responsiva y recortada si hace falta */
+.house-card-img img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+}
+
+/* Cuerpo de la tarjeta */
+.house-card-body {
+    padding: 16px;
+}
+
+.house-card-body h3 {
+    margin: 0 0 8px;
+    font-size: 1.3rem;
+}
+
+.house-card-body .price {
+    font-weight: 600;
+    color: #ba8406;
+    margin: 8px 0 12px;
+}
+
+/* Lista de iconos en fila */
+.icon-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 14px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+/* Botón */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #111;
+    transition: transform 0.1s ease, background 0.2s ease;
+    text-align: center;
+}
+
+.btn:hover {
+    background: #8b6305;
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.title h2{
+    margin-top: 5rem;    
+    text-align: center;
+    font-size: 3.5rem;
 }
