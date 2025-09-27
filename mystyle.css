@@ -38,8 +38,8 @@ a{
     line-height: 1.1;
     margin: 0;
     color: aliceblue;
-    text-shadow: 2px 2px 0px goldenrod,
-                -2px -2px 0px goldenrod,
+    text-shadow: 2px 2px 0px rgb(188, 88, 12),
+                -2px -2px 0px rgb(183, 128, 86),
                 0 0 10px goldenrod;
 }
 
@@ -57,7 +57,7 @@ a{
 }
 
 .header-init nav a:hover{
-    color: rgb(156, 137, 88);
+    color: rgb(147, 56, 7);
     text-decoration: underline;
 }
 
@@ -73,9 +73,9 @@ header p{
     font-size: 1.8rem;
     font-family: 'Times New Roman', Times, serif;
     color: aliceblue;
-    text-shadow: 2px 2px 0px goldenrod,
-                -2px -2px 0px goldenrod,
-                0 0 10px goldenrod;
+    text-shadow: 2px 2px 0px rgb(188, 88, 12),
+                -2px -2px 0px rgb(183, 128, 86),
+                0 0 10px rgb(255, 255, 255);
     padding-bottom: 2.5rem;
     margin-top: 2.5rem;
 }
@@ -109,6 +109,26 @@ main h2, h3, p{
     justify-content: space-evenly;
     gap: 3rem;
 }
+
+@media (min-width: 601px) and (max-width: 768px) {
+    .flex-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 600px) {
+    .flex-container{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin: 10px auto;
+    }
+    img{
+        display: block;
+        margin: 10px auto;
+    }
+}
+
 
 .icon-list img{
     width: 4rem;
@@ -170,7 +190,7 @@ main h2, h3, p{
 
 .house-card-body .price {
     font-weight: 600;
-    color: #ba8406;
+    color: rgb(188, 88, 12);
     margin: 8px 0 12px;
 }
 
@@ -209,7 +229,7 @@ main h2, h3, p{
 }
 
 .btn:hover {
-    background: #8b6305;
+    background: rgb(188, 88, 12);
     color: #fff;
     transform: translateY(-1px);
 }
@@ -223,7 +243,7 @@ main h2, h3, p{
 
 /* contact page header*/
 .header-contact{
-    background-color: rgb(97, 73, 13);
+    background-color: rgb(147, 56, 7);
     padding: 20px;
 }
 .field-contact{
@@ -238,7 +258,7 @@ main h2, h3, p{
     text-decoration: none;
 }
 .field-contact a:hover{
-    color: rgb(156, 137, 88);
+    color: rgb(83, 31, 4);
     text-decoration: underline;
 }
 
@@ -261,7 +281,7 @@ main h2, h3, p{
 form{
     width: 80%;
     margin: 50px auto;
-    background-color: rgb(97, 73, 13);
+    background-color: rgb(147, 56, 7);
     padding: 10px;
     border-radius: 10px;
 }
@@ -291,7 +311,7 @@ footer{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: rgb(97, 73, 13);
+    background-color: rgb(147, 56, 7);
     padding: 5px;
 }
 footer a{
@@ -300,7 +320,7 @@ footer a{
     text-decoration: none;
     
 }
-footer a:hover{color: rgb(156, 137, 88); text-decoration: underline;}
+footer a:hover{color: rgb(83, 31, 4); text-decoration: underline;}
 
 .cr-links{
     display: flex;
@@ -329,4 +349,272 @@ footer a:hover{color: rgb(156, 137, 88); text-decoration: underline;}
     align-items: center;
     justify-content: start;
 
+}
+
+/* About-portion */
+
+.header-about{
+    background-image: url(./img/About-body.jpg);
+    padding: 20px;
+    height: 10vh;
+}
+.field-about{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     gap: 30rem;
+     color: aliceblue;
+     font-size: 1rem;
+     margin: 20px 0px 10px 0px;
+}
+.field-about a{
+    border-left: 1px solid rgba(255,255,255,.8);
+    padding-left: 5px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.field-about a:hover{
+    color: rgb(147, 56, 7);
+    text-decoration: underline;
+}
+
+.main-about{
+    background-image: url(./img/About-body.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin-top: 30px;
+
+    color : aliceblue;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-txt1, .about-txt2, .about-txt3, .about-txt4, .about-txt5, .about-txt6{
+    margin: 20px 100px 20px 100px;
+    font-size: 1.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* ABOUT-TXT1 */
+
+.about-txt1{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.23);
+}
+
+.about-txt1 h2{
+    color: rgb(237, 97, 97);
+}
+.about-txt1 h3{
+    color: rgba(236, 97, 97, 0.691);
+}
+
+/* ABOUT-TXT2 */
+
+.about-txt2{
+    text-align: justify;
+    line-height: 1.5;
+}
+.about-txt2 h2{
+    color: rgb(226, 56, 56);
+    margin-left: 5vh;
+    font-size: 2.5rem;
+}
+.about-txt2 h3{
+    color: rgb(237, 97, 97);
+    margin-left: 5vh;
+}
+.about-txt2 p{
+    margin:  1vh 5vh 5vh 5vh;
+    color: rgba(236, 97, 97, 0.691);
+}
+
+/* ABOUT-TXT3 */
+
+.about-txt3{
+    text-align: justify;
+    line-height: 1.5;
+}
+.about-txt3 h2{
+    color: rgb(226, 56, 56);
+    margin-left: 5vh;
+    font-size: 2.5rem;
+}
+.about-txt3 h3{
+    color: rgb(237, 97, 97);
+    margin-left: 5vh;
+}
+.about-txt3 ul{
+    margin:  1vh 5vh 5vh 5vh;
+    color: rgba(236, 97, 97, 0.691);
+    list-style: inside;
+}
+
+/* ABOUT-TXT4 */
+
+.about-txt4{
+    text-align: justify;
+    line-height: 1.5;
+}
+.about-txt4 h2{
+    color: rgb(226, 56, 56);
+    margin-left: 5vh;
+    font-size: 2.5rem;
+}
+.about-txt4 h3{
+    color: rgb(237, 97, 97);
+    margin-left: 5vh;
+}
+.about-txt4 ul{
+    margin:  1vh 5vh 5vh 5vh;
+    color: rgba(236, 97, 97, 0.691);
+    list-style: inside;
+}
+
+/* ABOUT-TXT5 */
+
+.about-txt5{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: justify;
+    line-height: 1.5;
+}
+.about-txt5 img{
+    width: 20vh;
+    height: auto;
+    border-radius:50%;
+    margin: 10px 20px 20px 20px;
+}
+
+.about-txt5 h2{
+    color: rgb(226, 56, 56);
+    margin-left: 5vh;
+    font-size: 2.5rem;
+}
+.about-txt5 h3{
+    color: rgb(237, 97, 97);
+    margin-left: 5vh;
+}
+.about-txt5 p{  
+    margin:  5vh 5vh 5vh 5vh;
+    color: rgba(236, 97, 97, 0.691);
+}
+
+/* ABOUT-TXT6 */
+
+.about-txt6{
+    text-align: justify;
+    line-height: 1.5;
+}
+.about-txt6 h2{
+    color: rgb(226, 56, 56);
+    margin-left: 5vh;
+    font-size: 2.5rem;
+}
+.about-txt6 h3{
+    color: rgb(237, 97, 97);
+    margin-left: 5vh;
+}
+.about-txt6 p{  
+    margin:  1vh 5vh 5vh 5vh;
+    color: rgba(236, 97, 97, 0.691);
+}
+
+/* Button */
+
+.about-section a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #111;
+    transition: transform 0.1s ease, background 0.2s ease;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    color: aliceblue;
+
+    margin:  1vh 5vh 5vh 5vh;
+}
+.about-section a:hover {
+    background: rgb(190, 63, 25);
+    color: #fff;
+    transform: translateY(-1px);
+}
+
+.footer-about{
+    background-color: rgb(190, 63, 25);
+}
+
+/* Blog-Portion */
+
+.header-blog{
+    background-image: url(./img/blog-header.PNG);
+    padding: 20px;
+    height: 100%;
+}
+.field-blog{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+     gap: 30rem;
+     color: aliceblue;
+     font-size: 1rem;
+     margin: 20px 0px 10px 0px;
+}
+.field-blog a{
+    border-left: 1px solid rgba(255,255,255,.8);
+    padding-left: 5px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.field-blog a:hover{
+    color: rgb(147, 56, 7);
+    text-decoration: underline;
+}
+
+.main-blog{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    
+    background-image: url(./img/blog-body.PNG);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    margin-top: 30px;
+
+    color : aliceblue;
+}
+.card{
+    background: #0000008c;
+    border-radius: 16px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.avatar{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.review{
+    font-size: .95rem;
+    color: #e8e8e8;
+}
+.stars{
+    color: gold;
+    margin: 0.5rem 0;
 }
